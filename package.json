@@ -4,7 +4,7 @@
   "description": "Node static page server for running quick MVVM file server",
   "main": "lib/spserver.js",
   "scripts": {
-    "test": "mocha --reporter spec ./test/*.test.js"
+    "test": "mocha --reporter spec test/base.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,14 @@
   },
   "homepage": "https://github.com/TheThing/spserver",
   "dependencies": {
+    "app-root-path": "^1.0.0",
     "bunyan": "^1.3.3",
     "lodash": "^3.0.1",
     "nconf": "^0.7.1",
     "node-static": "^0.7.6"
   },
-  "bin": "./bin.js"
+  "bin": "./bin.js",
+  "devDependencies": {
+    "sinon": "^1.12.2"
+  }
 }
