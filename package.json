@@ -1,0 +1,29 @@
+{
+  "name": "node-spserver",
+  "version": "0.1.0",
+  "description": "Node static page server for running quick MVVM file server",
+  "main": "lib/spserver.js",
+  "scripts": {
+    "test": "mocha --reporter spec ./test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheThing/node-spserver.git"
+  },
+  "keywords": [
+    "MVVM",
+    "server"
+  ],
+  "author": "Jonatan Nilsson",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TheThing/node-spserver/issues"
+  },
+  "homepage": "https://github.com/TheThing/node-spserver",
+  "dependencies": {
+    "bunyan": "^1.3.3",
+    "lodash": "^3.0.1",
+    "node-static": "^0.7.6"
+  },
+  "bin": "./bin.js"
+}
