@@ -1,7 +1,7 @@
 spserver
 =======
 
-spserver is a simple helper method of providing a server for using in pure single-page applications in true MVVM fashion without having to write any node code.
+spserver (or single page server) is a simple helper method of providing a server for using in pure single-page applications in true MVVM fashion without having to write any node code.
 
 How it works
 ------------
