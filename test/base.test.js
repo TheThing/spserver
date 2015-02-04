@@ -25,8 +25,9 @@ describe('spserver', function() {
     });
 
     it('should return function if file is javascript', function() {
+      var path = require('path');
       var nothing = require('./nothing');
-      var test = spserver.generateBase('test/nothing.js', {});
+      var test = spserver.generateBase(path.resolve('test/nothing.js'), {});
 
       assert.strictEqual(nothing.toString(), test.toString());
     });
