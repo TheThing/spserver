@@ -70,7 +70,7 @@ A sample `config.json` file:
 {
   "production": {
     "port": 80,
-    "bunyan: {
+    "bunyan": {
       "name": "myserver",
       "use_bunyan": true,
       "streams": [{
