@@ -31,7 +31,7 @@ How to use
 ----------
 
 ```bash
-npm install -g spserver
+npm install [-g] spserver
 spserver -f ./myfile.html -s ./public -p 3000
 ```
 
