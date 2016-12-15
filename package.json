@@ -22,7 +22,7 @@
   "homepage": "https://github.com/TheThing/spserver",
   "dependencies": {
     "bunyan": "^1.3.3",
-    "lodash": "^3.0.1",
+    "lodash": "^4.17.2",
     "nconf": "^0.8.4",
     "node-static": "^0.7.6"
   },
