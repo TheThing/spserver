@@ -28,6 +28,7 @@
   },
   "bin": "./bin.js",
   "devDependencies": {
+    "mocha": "^5.2.0",
     "sinon": "^1.12.2"
   }
 }
