@@ -1,6 +1,6 @@
 {
   "name": "spserver",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Node static page server for running quick MVVM file server",
   "main": "lib/spserver.js",
   "scripts": {
