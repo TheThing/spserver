@@ -2,9 +2,10 @@
   "name": "spserver",
   "version": "0.3.0",
   "description": "Node static page server for running quick MVVM file server",
-  "main": "lib/spserver.js",
+  "main": "lib/spserver.mjs",
   "scripts": {
-    "test": "mocha --reporter spec test/base.test.js"
+    "test": "set NODE_ENV=test&& eltro test/**/*.test.mjs -r dot",
+    "test:linux": "NODE_ENV=test eltro 'test/**/*.test.mjs' -r dot"
   },
   "repository": {
     "type": "git",
@@ -21,14 +22,13 @@
   },
   "homepage": "https://github.com/TheThing/spserver",
   "dependencies": {
-    "bunyan-lite": "^1.0.0",
+    "bunyan-lite": "^1.1.1",
     "lodash": "^4.17.2",
-    "nconf": "^0.8.4",
+    "nconf-lite": "^2.0.0",
     "node-static": "^0.7.6"
   },
-  "bin": "./bin.js",
+  "bin": "./bin.mjs",
   "devDependencies": {
-    "mocha": "^5.2.0",
-    "sinon": "^1.12.2"
+    "eltro": "^1.2.3"
   }
 }

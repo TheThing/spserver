@@ -32,7 +32,7 @@ How to use
 
 ```bash
 npm install [-g] spserver
-spserver -f ./myfile.html -s ./public -p 3000
+spserver --file ./myfile.html --serve ./public -p 3000
 ```
 
 Options
@@ -42,23 +42,23 @@ Options
 
 By default, spserver will use the settings located in `config.json`. You can also override them or run it directly using only the commands below.
 
-`--config, -c`    Location of the config file for the server [default: config.json]
+`--config`    Location of the config file for the server [default: config.json]
 
-`--port, -p`      The port server should bind to [default: 3001 or 80 in production mode]
+`--port`      The port server should bind to [default: 3001 or 80 in production mode]
 
-`--file, -f`      Single static file the server should serve on all unknown requests
+`--file`      Single static file the server should serve on all unknown requests
 
-`--bunyan, -b`    Use bunyan instead of console to log to [default: true in production mode]
+`--bunyan`    Use bunyan instead of console to log to [default: true in production mode]
 
-`--template, -t`  Parse the static file as lodash template with all options/settings being passed to it
+`--template`  Parse the static file as lodash template with all options/settings being passed to it
 
-`--name, -n`      The name for this server for logging [default: spserver]
+`--name`      The name for this server for logging [default: spserver]
 
-`--serve, -s`     Folder path to serve static files from [default: public]
+`--serve`     Folder path to serve static files from [default: public]
 
-`--prod, -P`      Force run the server in production mode
+`--prod`      Force run the server in production mode
 
-`--debug, -d`     Force run the server in development mode
+`--debug`     Force run the server in development mode
 
 Config
 ======
@@ -91,7 +91,7 @@ Any of the settings in the `config.json` file can be overridden using the CLI op
 Template
 ========
 
-spserver can also help provide any additional info to your single file thanks to lodash.template. If template mode is specified, it will parse the single file first through lodash.template with the whole config file. This can allow you to specify configuration in your config file and expose them in your single file.
+spserver can also help provide any additional info to your single file thanks to lodash: `template`. If template mode is specified, it will parse the single file first through `lodash.template` with the whole config file. This can allow you to specify configuration in your config file and expose them in your single file.
 
 Example:
 
@@ -115,4 +115,4 @@ Example:
 ```
 
 Then you can run it like this:
-`spserver -c ./config.json -t -f ./base.html -s ./public`
+`spserver --config ./config.json --template --file ./base.html --serve ./public`
